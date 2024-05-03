@@ -18,4 +18,7 @@ public class UserService {
         if (user != null) {
             user.setEmail(newEmail);
         }
+        public void deleteUser(String username) {
+        users.remove(username);
+    }
 }
