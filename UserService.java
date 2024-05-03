@@ -13,4 +13,9 @@ public class UserService {
         User user = users.get(username);
         return user != null && user.getPassword().equals(password);
   }
+    public void updateProfile(String username, String newEmail) {
+        User user = users.get(username);
+        if (user != null) {
+            user.setEmail(newEmail);
+        }
 }
